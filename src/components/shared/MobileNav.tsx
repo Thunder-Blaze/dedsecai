@@ -1,28 +1,12 @@
 "use client";
 import React from 'react'
 import Link from 'next/link'
-import { Sheet, SheetContent, SheetTrigger } from '../../components-old/ui/sheet'
+import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet'
 import { usePathname } from 'next/navigation';
 import { CiMenuFries } from 'react-icons/ci';
-
-const links = [
-    {
-        name: "Home",
-        path: "/",
-    },
-    {
-        name: "Services",
-        path: "/services",
-    },
-    {
-        name: "About",
-        path: "/about",
-    },
-    {
-        name: "Contact",
-        path: "/contact",
-    },
-];
+import { UserButton } from './user-button';
+import { ModeToggle } from './mode-toggle';
+import { mainNavLinks } from "@/constants"
 
 const MobileNav = () => {
     const pathname = usePathname();
@@ -36,12 +20,15 @@ const MobileNav = () => {
                     Dedsec<span className='text-accent'>AI</span>
                 </div>
                 <nav className='flex flex-col gap-6 items-center justify-center'>
-                {links.map((link, index) => (
-                    <Link key={index} href={link.path} className={`${link.path === pathname && "text-accent border-b-2 bprder-accent"} font-semibold hover:text-accent transition-all duration-300`}>
-                        {link.name}
-                    </Link>
-                ))}
-                {/* <Link href={"/contact"}><Button className='font-bold font-monospace'>Contact Us</Button></Link> */}
+                    {mainNavLinks.map((link, index) => (
+                        <Link key={index} href={link.path} className={`${link.path === pathname && "text-accent border-b-2 bprder-accent"} font-semibold hover:text-accent transition-all duration-300`}>
+                            {link.name}
+                        </Link>
+                    ))}
+                    <div className="m-auto flex items-center space-x-4">
+                    <UserButton />
+                    <ModeToggle />
+                </div>
                 </nav>
             </SheetContent>
         </Sheet>

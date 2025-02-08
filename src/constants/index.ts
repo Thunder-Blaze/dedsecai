@@ -1,9 +1,9 @@
 export const mainNavLinks = [
-    { title: "New Arrivals", url: "/" },
-    { title: "Best Sellers", url: "/" },
-    { title: "Sales", url: "/" },
-    { title: "Categories", url: "/" }
-  ]
+  { name: "Home", path: "/", },
+  { name: "Services", path: "/services", },
+  { name: "About", path: "/about", },
+  { name: "Contact", path: "/contact", },
+];
   
   export const footerLinks = [
     {
