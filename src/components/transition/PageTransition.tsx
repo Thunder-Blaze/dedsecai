@@ -11,7 +11,7 @@ const PageTransition: React.FC<childProps> = ({children}) => {
     const pathname = usePathname();
     return (
         <AnimatePresence>
-            <div key={pathname}>
+            <div key={pathname} className='flex-1'>
                 <motion.div 
                 initial={{ opacity: 1 }} 
                 animate={{ opacity: 0, transition: {delay: 1, duration: 0.2, ease: "easeInOut"} }} 

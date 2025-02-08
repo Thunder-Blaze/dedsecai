@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { Button } from './ui/button'
 
-import Nav from './Nav'
-import MobileNav from './MobileNav'
+import Nav from '../components/shared/Nav'
+import MobileNav from '../components/shared/MobileNav'
 
 const Header = () => {
   return (
@@ -14,7 +14,9 @@ const Header = () => {
             </Link>
             <div className='hidden lg:flex items-center gap-4'>
                 <Nav />
-                <Link href={"/contact"}><Button className='font-bold font-monospace'>Contact Us</Button></Link>
+                <Link href={"/contact"}>
+                    <Button className='font-monospace bg-accent font-black hover:bg-accent-foreground'>Contact Us</Button>
+                </Link>
             </div>
             <div className='xl:hidden'>
                 <MobileNav />
