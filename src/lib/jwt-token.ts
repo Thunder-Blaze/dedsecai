@@ -26,7 +26,7 @@ export const generateToken = async (payload: { email: string }, expiresInTime: m
 
 export const verifyToken = async (token: string): Promise<IPayload | IError> => {
   try {
-    const decoded = jwt.verify(token, process.env.TOKEN_SECRET!) as IPayload
+    const decoded = jwt.verify(token, process.env.JWT_SECRET!) as IPayload
     return decoded
   } catch (error) {
     if (error instanceof TokenExpiredError) {
