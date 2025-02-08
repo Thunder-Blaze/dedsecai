@@ -1,3 +1,5 @@
+import { FaGithub, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa"
+
 export const mainNavLinks = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
@@ -7,39 +9,49 @@ export const mainNavLinks = [
 
 export const footerLinks = [
     {
-        title: 'Shop',
+        title: 'Application',
         links: [
-            { title: 'New Arrivals', url: '/' },
-            { title: 'Best Sellers', url: '/' },
-            { title: 'Sales', url: '/' },
-            { title: 'Categories', url: '/' },
-        ],
-    },
-    {
-        title: 'Support',
-        links: [
-            { title: 'Customer Service', url: '/' },
-            { title: 'Returns & Exchanges', url: '/' },
-            { title: 'Shipping Information', url: '/' },
-            { title: 'Size Guide', url: '/' },
+            { title: 'Dashboard', url: '/dashboard' },
+            { title: 'Services', url: '/services' },
+            { title: 'Report Generation', url: '/report-generation' },
+            { title: 'Log Analyzer', url: '/log-analyzer' },
         ],
     },
     {
         title: 'Company',
         links: [
             { title: 'About Us', url: '/' },
-            { title: 'Careers', url: '/' },
-            { title: 'Blog', url: '/' },
-            { title: 'Affiliate Program', url: '/' },
+            { title: 'Contact Us', url: '/' },
+            { title: 'Privacy Policy', url: '/' },
+            { title: 'Terms & Conditions', url: '/' },
         ],
     },
-    {
-        title: 'Socials',
-        links: [
-            { title: 'Instagram', url: '/' },
-            { title: 'Twitter', url: '/' },
-            { title: 'Facebook', url: '/' },
-            { title: 'Pinterest', url: '/' },
-        ],
+]
+
+export const socialLinks = [
+    { 
+        title: "Github",
+        icon: FaGithub,
+        url: '/'
+    },
+    { 
+        title: "Instagram",
+        icon: FaInstagram,
+        url: '/'
+    },
+    { 
+        title: "Twitter",
+        icon: FaTwitter,
+        url: '/'
+    },
+    { 
+        title: "Facebook",
+        icon: FaFacebook,
+        url: '/'
+    },
+    { 
+        title: "LinkedIn",
+        icon: FaLinkedin,
+        url: '/'
     },
 ]

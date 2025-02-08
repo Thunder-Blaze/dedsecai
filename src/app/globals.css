@@ -52,7 +52,7 @@ body,
         --popover-foreground: 210 40% 98%;
         --primary: 210 40% 98%;
         --primary-foreground: 222.2 47.4% 11.2%;
-        --secondary: 217.2 32.6% 17.5%;
+        --secondary: 240 27.3% 8.6%;
         --secondary-foreground: 210 40% 98%;
         --muted: 217.2 32.6% 17.5%;
         --muted-foreground: 215 20.2% 65.1%;
@@ -81,4 +81,11 @@ body,
     body {
         @apply bg-background text-foreground;
     }
+    .text-outline {
+        -webkit-text-stroke: 1px #FFFFFF;
+    }
+    .text-outline-hover {
+        -webkit-text-stroke: 1px #00ff99;
+    }
 }
+

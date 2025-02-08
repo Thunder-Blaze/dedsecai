@@ -14,7 +14,7 @@ export const SignInButton = ({ children }: SignInButtonProps) => {
     const onClick = () => router.push('/signin')
 
     return (
-        <Button onClick={onClick} className="w-full">
+        <Button onClick={onClick} className="w-full hover:bg-transparent">
             {children}
         </Button>
     )
