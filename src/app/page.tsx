@@ -1,14 +1,12 @@
-import React from 'react';
+import React from 'react'
 
 const Home = () => {
     return (
-        <div className=''>
+        <div className="">
             wae
-            <div className='text-accent'>
-                asd
-            </div>
+            <div className="text-accent">asd</div>
         </div>
     )
 }
 
-export default Home;
+export default Home

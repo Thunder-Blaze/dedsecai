@@ -1,11 +1,11 @@
-import { SignUpForm } from "../_components/signup-form"
+import { SignUpForm } from '../_components/signup-form'
 
 const SignUpPage = () => {
-  return (
-    <section className="w-full">
-      <SignUpForm />
-    </section>
-  )
+    return (
+        <section className="w-full">
+            <SignUpForm />
+        </section>
+    )
 }
 
 export default SignUpPage
