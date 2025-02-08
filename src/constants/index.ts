@@ -20,10 +20,10 @@ export const footerLinks = [
     {
         title: 'Company',
         links: [
-            { title: 'About Us', url: '/' },
-            { title: 'Contact Us', url: '/' },
-            { title: 'Privacy Policy', url: '/' },
-            { title: 'Terms & Conditions', url: '/' },
+            { title: 'About Us', url: '/about' },
+            { title: 'Contact Us', url: '/contact' },
+            { title: 'Privacy Policy', url: '/privacy' },
+            { title: 'Terms & Conditions', url: '/terms' },
         ],
     },
 ]

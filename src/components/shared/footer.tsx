@@ -7,16 +7,20 @@ import { Input } from '../ui/input'
 export const Footer = () => {
     return (
         <footer className="flex flex-col text-foreground/50 text-sm mt-5 border-t border-foreground/10">
-            <div className="flex bg-foreground/5 items-center justify-center gap-3 py-5">
-                <SiAuth0 className='w-6 h-6 text-accent'></SiAuth0>
-                <span className="text-lg font-semibold">DedsecAI</span>
-                <div className='flex gap-3'>
-                    <Input placeholder="Enter Email Address" type="email" className="w-60 rounded-full" />
-                    <button className="bg-accent text-foreground/90 px-4 py-1 rounded-md">Subscribe</button>
+            <div className="bg-foreground/5 py-5">
+                <div className='flex flex-wrap container mx-auto items-center justify-evenly gap-10 '>
+                    <div className='flex flex-col gap-0.5'>
+                        <div className='uppercase text-foreground/60 font-monospace font-semibold text-xs'>Subscribe to our</div>
+                        <div className='font-monospace text-foreground font-black text-[1.2rem] uppercase'>Newsletter</div>
+                    </div>
+                    <div className='flex gap-3 relative items-center flex-1 max-w-[30rem] min-w-[16rem]'>
+                        <Input placeholder="Enter Email Address" type="email" className="w-full flex h-[48px] ring-2 focus-visible:ring-2 ring-primary/20 rounded-full border-none focus:border-accent focus:ring-accent bg-background text-foreground placeholder:text-foreground/60 px-4 pr-28 outline-none active:outline-none focus:outline-none focus-visible:outline-none focus-visible:ring-accent" />
+                        <button className="bg-accent font-bold px-4 py-1.5 rounded-full absolute text-sm right-2.5 text-background active:scale-90 transition-all duration-300">Subscribe</button>
+                    </div>
                 </div>
             </div>
             <div className="flex flex-wrap justify-evenly container mx-auto max-sm:flex-col gap-10 px-6 py-10 sm:gap-20">
-                <div className='h-full flex flex-col gap-3 justify-center'>
+                <div className='flex flex-col gap-3 justify-center'>
                     <h1 className='text-4xl text-foreground/90 font-black font-monospace text'>Dedsec<span className='text-accent/90'>AI</span></h1>
                     <div>&copy; 2025</div>
                 </div>

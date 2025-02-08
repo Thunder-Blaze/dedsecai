@@ -22,7 +22,7 @@ const PageTransition: React.FC<childProps> = ({ children }) => {
                             ease: 'easeInOut',
                         },
                     }}
-                    className="h-screen w-screen fixed dark bg-primary dark:bg-slate-950 top-0 left-0 pointer-events-none"
+                    className="h-screen w-screen fixed dark bg-primary dark:bg-slate-950 top-0 left-0 pointer-events-none z-30"
                     exit={{ opacity: 0 }}
                 ></motion.div>
                 {children}
