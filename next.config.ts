@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
     //     esmExternals: "loose",
     // },
     // serverComponentsExternalPackages: ["mongoose"]
+    // experimental: {
+        // turbopack: false, // Disable TurboPack
+    // },
 }
 
 export default nextConfig
