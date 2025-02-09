@@ -61,7 +61,7 @@ export const AuthLink = ({ isSignedIn = false }) =>
 export const UserButton = () => {
     const pathName = usePathname()
     const user = useCurrentUser()
-    // console.log({user})
+    console.log({user})
 
     const userNavLinks = [{ title: 'Settings', url: '/settings' }]
 
