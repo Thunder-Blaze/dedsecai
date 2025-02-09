@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { JetBrains_Mono, Inter, Jost } from 'next/font/google'
 import { SessionProvider } from 'next-auth/react'
 import { auth } from '@/auth'
-import AnimatedCursor from "react-animated-cursor"
+import AnimatedCursor from 'react-animated-cursor'
 import './globals.css'
 
 import ThemeProvider from '@/providers/theme-provider'
@@ -50,18 +50,20 @@ export default async function RootLayout({
                     >
                         <Navbar />
                         <AnimatedCursor
-                            innerSize={10}  // Size of the inner circle
-                            outerSize={30}  // Size of the outer circle (the expanded cursor)
-                            color="255, 255, 255"  // Red color for the cursor
-                            // innerAlpha={0.9}  // Opacity of the inner circle
-                            outerAlpha={0}  // Transparency of the outer circle
-                            innerScale={2}  // Scale effect when hovering
-                            outerScale={3}  // Larger outer circle on hover
-                            clickables={['h1','h2','h3','a', 'button', '.hover-element']}  // Specify which elements trigger hover effects
-                            // isShowOuter={true}  // Show outer circle
-                            // isHideCursor={false}  // Don't hide the default cursor
-                            // hasMotion={true}  // Enable smooth animation
-                            // hasBlend={true}  // Enable blending effect (useful for hover on certain elements)
+                            innerSize={10}
+                            outerSize={30}
+                            color="255, 255, 255"
+                            outerAlpha={0}
+                            innerScale={2}
+                            outerScale={3}
+                            clickables={[
+                                'h1',
+                                'h2',
+                                'h3',
+                                'a',
+                                'button',
+                                '.hover-element',
+                            ]}
                             outerStyle={{
                                 backdropFilter: 'invert(1)',
                                 backgroundColor: 'rgba(255, 255, 255, 0.1)',

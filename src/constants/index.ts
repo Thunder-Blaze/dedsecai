@@ -1,4 +1,10 @@
-import { FaGithub, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa"
+import {
+    FaGithub,
+    FaFacebook,
+    FaInstagram,
+    FaTwitter,
+    FaLinkedin,
+} from 'react-icons/fa'
 
 export const mainNavLinks = [
     { name: 'Home', path: '/' },
@@ -29,29 +35,29 @@ export const footerLinks = [
 ]
 
 export const socialLinks = [
-    { 
-        title: "Github",
+    {
+        title: 'Github',
         icon: FaGithub,
-        url: '/'
+        url: '/',
     },
-    { 
-        title: "Instagram",
+    {
+        title: 'Instagram',
         icon: FaInstagram,
-        url: '/'
+        url: '/',
     },
-    { 
-        title: "Twitter",
+    {
+        title: 'Twitter',
         icon: FaTwitter,
-        url: '/'
+        url: '/',
     },
-    { 
-        title: "Facebook",
+    {
+        title: 'Facebook',
         icon: FaFacebook,
-        url: '/'
+        url: '/',
     },
-    { 
-        title: "LinkedIn",
+    {
+        title: 'LinkedIn',
         icon: FaLinkedin,
-        url: '/'
+        url: '/',
     },
 ]
