@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     // },
     // serverComponentsExternalPackages: ["mongoose"]
     // experimental: {
-        // turbopack: false, // Disable TurboPack
+    // turbopack: false, // Disable TurboPack
     // },
 }
 
