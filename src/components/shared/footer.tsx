@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { footerLinks, socialLinks } from '@/constants'
 
-import { SiAuth0 } from 'react-icons/si'
 import { Input } from '../ui/input'
 
 export const Footer = () => {

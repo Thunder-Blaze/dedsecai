@@ -1,8 +1,6 @@
 import { UserRole } from '@/lib/models/types'
-import NextAuth, {
-    type DefaultSession,
-    type User as NextAuthUser,
-} from 'next-auth'
+// import NextAuth, {
+import { type DefaultSession, type User as NextAuthUser } from 'next-auth'
 
 export interface ExtendedUser extends NextAuthUser {
     _id: string

@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-import { title } from 'process'
 import React from 'react'
 import { BsArrowDownRight } from 'react-icons/bs'
 import { motion } from 'framer-motion'

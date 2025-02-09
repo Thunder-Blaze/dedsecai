@@ -20,6 +20,7 @@ export const fetcher = async (
     try {
         return await response.json()
     } catch (error) {
+        console.log(error)
         return null
     }
 }

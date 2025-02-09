@@ -46,8 +46,9 @@ const Contact = () => {
                                 Contact Us
                             </h3>
                             <p className="text-foreground/60">
-                                We're here to help and answer any question you
-                                might have. We look forward to hearing from you.
+                                We&apos;re here to help and answer any question
+                                you might have. We look forward to hearing from
+                                you.
                             </p>
                             <div className="grid grid-cols-1 gap-6">
                                 <Input

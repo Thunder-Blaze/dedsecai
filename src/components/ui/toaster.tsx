@@ -32,6 +32,7 @@ export function Toaster() {
                 const toastClass = `bg-opacity-50 ${
                     status ? toastStatusColors[status] : 'bg-blue-500'
                 }`
+                console.log({ toastClass })
 
                 return (
                     <Toast key={id} {...props}>

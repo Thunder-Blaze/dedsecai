@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { JetBrains_Mono, Inter, Jost } from 'next/font/google'
+import { JetBrains_Mono, Inter } from 'next/font/google'
 import { SessionProvider } from 'next-auth/react'
 import { auth } from '@/auth'
 import AnimatedCursor from 'react-animated-cursor'
