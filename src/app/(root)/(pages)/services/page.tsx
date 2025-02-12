@@ -92,7 +92,9 @@ const Services = () => {
                                 <h2 className="text-[36px] md:text-[42px] font-bold leading-none text-foreground group-hover:text-accent transition-all duration-500">
                                     {service.title}
                                 </h2>
-                                <p className='text-foreground/80'>{service.description}</p>
+                                <p className="text-foreground/80">
+                                    {service.description}
+                                </p>
                                 <div className="border-b border-foreground/20 w-full"></div>
                             </div>
                         )

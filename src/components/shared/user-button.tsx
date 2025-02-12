@@ -53,7 +53,7 @@ export const AuthLink = ({ isSignedIn = false }) =>
             Sign Out
         </SignOutButton>
     ) : (
-        <div className='flex gap-2 flex-col'>
+        <div className="flex gap-2 flex-col">
             <SignInButton>
                 <IoMdLogIn className="h-4 w-4 mr-2" />
                 Sign In

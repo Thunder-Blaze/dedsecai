@@ -26,7 +26,6 @@ const contactInfo = [
 ]
 
 const Contact = () => {
-
     return (
         <motion.section
             initial={{ opacity: 0 }}
@@ -49,14 +48,8 @@ const Contact = () => {
                                 you.
                             </p>
                             <div className="grid grid-cols-1 gap-6">
-                                <Input
-                                    type="text"
-                                    placeholder="First Name"
-                                />
-                                <Input
-                                    type="text"
-                                    placeholder="Last Name"
-                                />
+                                <Input type="text" placeholder="First Name" />
+                                <Input type="text" placeholder="Last Name" />
                                 <Input
                                     type="email"
                                     placeholder="Email Address"
