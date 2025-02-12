@@ -26,8 +26,6 @@ const contactInfo = [
 ]
 
 const Contact = () => {
-    const InputStyle =
-        'flex h-[48px] ring-1 focus-visible:ring-1 ring-primary/20 rounded-md border-none focus:outline-none focus:border-accent focus:ring-accent bg-background text-foreground placeholder:text-foreground/60 px-4 outline-none active:outline-none focus:outline-none focus-visible:outline-none focus-visible:ring-accent'
 
     return (
         <motion.section
@@ -52,28 +50,24 @@ const Contact = () => {
                             </p>
                             <div className="grid grid-cols-1 gap-6">
                                 <Input
-                                    className={InputStyle}
                                     type="text"
                                     placeholder="First Name"
                                 />
                                 <Input
-                                    className={InputStyle}
                                     type="text"
                                     placeholder="Last Name"
                                 />
                                 <Input
-                                    className={InputStyle}
                                     type="email"
                                     placeholder="Email Address"
                                 />
                                 <Input
-                                    className={InputStyle}
                                     type="phone"
                                     placeholder="Phone Number"
                                 />
                             </div>
                             <Textarea
-                                className={`${InputStyle} h-[120px]`}
+                                className={`h-[120px]`}
                                 placeholder="Type your message here."
                             />
                             <Button className="max-w-40">Send Message</Button>

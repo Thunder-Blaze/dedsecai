@@ -39,6 +39,9 @@ export const SignInForm = () => {
         },
     })
 
+    const InputStyle =
+        'flex h-[42px] ring-1 focus-visible:ring-1 ring-primary/20 rounded-md border-none focus:outline-none focus:border-accent focus:ring-accent bg-background text-foreground placeholder:text-foreground/60 px-4 outline-none active:outline-none focus:outline-none focus-visible:outline-none focus-visible:ring-accent'
+
     async function onSubmit(values: z.infer<typeof SignInValidation>) {
         // console.log(values)
         setError('')
@@ -84,6 +87,7 @@ export const SignInForm = () => {
                                             <Input
                                                 disabled={isPending}
                                                 placeholder="123456"
+                                                className={InputStyle}
                                                 {...field}
                                             />
                                         </FormControl>
@@ -104,6 +108,7 @@ export const SignInForm = () => {
                                                 <Input
                                                     disabled={isPending}
                                                     placeholder="mail@example.com"
+                                                    className={InputStyle}
                                                     {...field}
                                                 />
                                             </FormControl>
@@ -121,6 +126,7 @@ export const SignInForm = () => {
                                                 <Input
                                                     disabled={isPending}
                                                     type="password"
+                                                    className={InputStyle}
                                                     placeholder="your password"
                                                     {...field}
                                                 />

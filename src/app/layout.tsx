@@ -3,7 +3,7 @@ import { JetBrains_Mono, Inter } from 'next/font/google'
 import { SessionProvider } from 'next-auth/react'
 import { auth } from '@/auth'
 import AnimatedCursor from 'react-animated-cursor'
-import '../globals.css'
+import './globals.css'
 
 import ThemeProvider from '@/providers/theme-provider'
 import { Navbar } from '@/components/shared/navbar'
@@ -62,6 +62,7 @@ export default async function RootLayout({
                                 'h3',
                                 'a',
                                 'button',
+                                'svg',
                                 '.hover-element',
                             ]}
                             outerStyle={{

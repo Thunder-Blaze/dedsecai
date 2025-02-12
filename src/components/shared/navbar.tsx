@@ -4,7 +4,7 @@ import Nav from './Nav'
 import MobileNav from './MobileNav'
 import { ModeToggle } from '@/components/shared/mode-toggle'
 import { UserButton } from '@/components/shared/user-button'
-import { Button } from '../ui/button'
+import { Button } from '@/components/ui/button'
 
 export const Navbar = () => {
     return (

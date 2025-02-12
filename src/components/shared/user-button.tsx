@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import { SignInButton } from '@/components/shared/signin-button'
+import { SignUpButton } from '@/components/shared/signup-button'
 import { SignOutButton } from '@/components/shared/signout-button'
 
 interface NavLink {
@@ -52,10 +53,16 @@ export const AuthLink = ({ isSignedIn = false }) =>
             Sign Out
         </SignOutButton>
     ) : (
-        <SignInButton>
-            <IoMdLogIn className="h-4 w-4 mr-2" />
-            Sign In
-        </SignInButton>
+        <div className='flex gap-2 flex-col'>
+            <SignInButton>
+                <IoMdLogIn className="h-4 w-4 mr-2" />
+                Sign In
+            </SignInButton>
+            <SignUpButton>
+                <IoMdLogIn className="h-4 w-4 mr-2" />
+                Sign Up
+            </SignUpButton>
+        </div>
     )
 
 export const UserButton = () => {
@@ -75,7 +82,7 @@ export const UserButton = () => {
                     </AvatarFallback>
                 </Avatar>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-40" align="end">
+            <DropdownMenuContent className="w-fit" align="end">
                 {user && (
                     <>
                         <UserNavLinks
