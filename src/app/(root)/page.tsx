@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <>
             <div
-                className="flex flex-col lg:flex-row container"
+                className="flex flex-col lg:flex-row container overflow-y-auto h-full"
                 style={{ minHeight: 'calc(100vh - 90px)' }}
             >
                 <div className="w-full flex flex-col justify-center items-start p-2 md:p-5 lg:p-8 gap-6">
