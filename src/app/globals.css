@@ -8,6 +8,50 @@ body,
     height: 100%;
 }
 
+@keyframes fromleft {
+    0% {
+        opacity: 0;
+        translate: -100%;
+    }
+    100% {
+        opacity: 1;
+        translate: none;
+    }
+}
+
+@keyframes onshow {
+    0% {
+        opacity: 0;
+        scale: 0.5;
+    }
+    100% {
+        opacity: 1;
+        scale: none;
+    }
+}
+
+@keyframes fromright {
+    0% {
+        opacity: 0;
+        translate: 100%;
+    }
+    100% {
+        opacity: 1;
+        translate: none;
+    }
+}
+
+@keyframes fromtop {
+    0% {
+        opacity: 0;
+        translate: 0, -100%;
+    }
+    100% {
+        opacity: 1;
+        translate: none;
+    }
+}
+
 @layer base {
     :root {
         --background: 0 0% 100%;
@@ -86,5 +130,32 @@ body,
     }
     .text-outline-hover {
         -webkit-text-stroke: 1px #00ff99;
+    }
+    .transitionate {
+        @apply transition-all duration-300 ease-in-out;
+    }
+    .animate-scale {
+        animation: onshow ease-in-out;
+        -webkit-animation: onshow ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0 cover 30%;
+    }
+    .animate-fromleft {
+        animation: fromleft ease-in-out;
+        -webkit-animation: fromleft ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0 cover 20%;
+    }
+    .animate-fromright {
+        animation: fromright ease-in-out;
+        -webkit-animation: fromright ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0 cover 20%;
+    }
+    .animate-fromtop {
+        animation: fromtop ease-in-out;
+        -webkit-animation: fromtop ease-in-out;
+        animation-timeline: view();
+        animation-range: entry 0 cover 30%;
     }
 }

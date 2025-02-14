@@ -76,7 +76,7 @@ const Services = () => {
                         return (
                             <div
                                 key={index}
-                                className="flex flex-1 flex-col justify-center gap-6 group"
+                                className={`flex flex-1 flex-col justify-center gap-6 group ${(index%2)?"animate-fromright":"animate-fromleft"}`}
                             >
                                 <div className="w-full flex justify-between items-center">
                                     <div className="text-6xl font-extrabold text-outline text-transparent font-monospace group-hover:text-outline-hover transition-all duration-500">

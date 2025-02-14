@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import Forensics from '@/components/shared/forensics'
@@ -37,8 +38,10 @@ const Home = () => {
                 </div>
                 <div className="w-full flex justify-center items-center">
                     <Image
-                        src="https://d117h1jjiq768j.cloudfront.net/images/default-source/flowmon-home/screen-overview.png?sfvrsn=9e2c8f07_1"
+                        src="/assets/dashborad-preview.png"
                         className="scale-90"
+                        width={500}
+                        height={300}
                         alt="Dashboard Preview"
                     />
                 </div>

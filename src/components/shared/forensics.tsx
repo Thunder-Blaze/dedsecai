@@ -25,7 +25,7 @@ const Forensics = () => {
 
     return (
         <div className="w-full container mx-auto flex flex-col justify-center items-center p-8 gap-6">
-            <h1 className="lg:text-3xl text-2xl xl:text-5xl font-jost font-bold">
+            <h1 className="lg:text-3xl text-2xl xl:text-5xl font-jost font-bold animate-scale">
                 Impacts and Benefits of Enhanced Forensics
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
