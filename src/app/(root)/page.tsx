@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import Forensics from '@/components/shared/forensics'
 import Link from 'next/link'
 import Image from 'next/image'
+import ModelDesign from '@/components/shared/model-design';
 
 const Home = () => {
     return (
@@ -47,6 +48,7 @@ const Home = () => {
                 </div>
             </div>
             <Forensics />
+            <ModelDesign />
         </>
     )
 }
